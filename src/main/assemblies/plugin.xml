@@ -8,12 +8,12 @@
     <files>
         <file>
             <source>${project.basedir}/src/main/resources/plugin-descriptor.properties</source>
-            <outputDirectory>elasticsearch</outputDirectory>
+            <outputDirectory/>
             <filtered>true</filtered>
         </file>
         <file>
             <source>${project.basedir}/src/main/resources/plugin-security.policy</source>
-            <outputDirectory>elasticsearch</outputDirectory>
+            <outputDirectory/>
             <filtered>true</filtered>
         </file>
     </files>
