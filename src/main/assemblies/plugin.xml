@@ -19,7 +19,7 @@
     </files>
     <dependencySets>
         <dependencySet>
-            <outputDirectory>elasticsearch</outputDirectory>
+            <outputDirectory/>
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <excludes>
@@ -27,7 +27,7 @@
             </excludes>
         </dependencySet>
         <dependencySet>
-            <outputDirectory>elasticsearch</outputDirectory>
+            <outputDirectory/>
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <includes>
