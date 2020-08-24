@@ -16,7 +16,7 @@ import org.apache.lucene.analysis.synonym.SolrSynonymParser;
 import org.apache.lucene.analysis.synonym.SynonymMap;
 import org.apache.lucene.analysis.synonym.WordnetSynonymParser;
 import java.io.StringReader;
-import org.elasticsearch.common.logging.ESLoggerFactory;
+import org.elasticsearch.common.logging.Loggers;
 import org.elasticsearch.env.Environment;
 
 import java.io.BufferedReader;
@@ -35,7 +35,7 @@ public class RemoteSynonymFile implements SynonymFile {
     private static final String LAST_MODIFIED_HEADER = "Last-Modified";
     private static final String ETAG_HEADER = "ETag";
 
-    private static Logger logger = ESLoggerFactory.getLogger("dynamic-synonym");
+    private static Logger logger = Loggers.getLogger(RemoteSynonymFile.class,"dynamic-synonym");
 
     private CloseableHttpClient httpclient;
 
